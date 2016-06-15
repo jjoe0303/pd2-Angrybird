@@ -31,7 +31,7 @@ void MainWindow::showEvent(QShowEvent *)
     // Create bird (You can edit here)
     Bird *birdie = new Bird(0.0f,10.0f,0.17f,&timer,QPixmap(":/bird.png").scaled(46,46),world,scene);
     // Setting the Velocity
-    birdie->setLinearVelocity(b2Vec2(0,0));
+    birdie->setLinearVelocity(b2Vec2(10,0));
     itemList.push_back(birdie);
 
     // Create pig (You can edit here)
@@ -41,13 +41,13 @@ void MainWindow::showEvent(QShowEvent *)
     itemList.push_back(piggy);
 
     // Create wood (You can edit here)
-    Wood *woody = new Wood(18.0f,6.0f,0.5f,2.2f,&timer,QPixmap(":/wood").scaled(21,83),world,scene);
+    Wood *woody = new Wood(18.0f,6.0f,0.4f,1.5f,&timer,QPixmap(":/wood").scaled(21,83),world,scene);
     // Setting the Velocity
     woody->setLinearVelocity(b2Vec2(0,0));
     itemList.push_back(woody);
 
     // Create wood (You can edit here)
-    Wood *woody2 = new Wood(22.4f,6.0f,0.5f,2.2f,&timer,QPixmap(":/wood").scaled(21,83),world,scene);
+    Wood *woody2 = new Wood(22.4f,6.0f,0.4f,1.5f,&timer,QPixmap(":/wood").scaled(21,83),world,scene);
     // Setting the Velocity
     woody2->setLinearVelocity(b2Vec2(0,0));
     itemList.push_back(woody2);

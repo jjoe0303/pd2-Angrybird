@@ -6,9 +6,9 @@
 #include <QGraphicsScene>
 #include <QTimer>
 
-#define WOOD_DENSITY 10.0f
-#define WOOD_FRICTION 0.2f
-#define WOOD_RESTITUTION 0.5f
+#define WOOD_DENSITY 1.2f
+#define WOOD_FRICTION 0.5f
+#define WOOD_RESTITUTION 0.3f
 
 class Wood:public GameItem
 {
