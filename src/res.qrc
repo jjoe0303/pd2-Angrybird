@@ -2,5 +2,17 @@
     <qresource prefix="/">
         <file alias="ground.png">image/GROUND.png</file>
         <file alias="bird.png">image/Normal_Bird_1.png</file>
+        <file alias="bg.jpg">image/Angry_birds_background2.jpg</file>
+        <file alias="land.jpg">image/Angry_birds_ground1.jpg</file>
+        <file>image/slingshot.jpg</file>
+        <file>image/slingshot3.png</file>
+        <file>image/King_pig.png</file>
+        <file alias="pig.png">image/King_pig2.png</file>
+        <file alias="quitbutton">image/BUTTON3.png</file>
+        <file alias="rebutton">image/BUTTON4.png</file>
+        <file alias="wood">image/wood1.png</file>
+        <file alias="yellow">image/yellow.png</file>
+        <file alias="bgg">image/Angry_birds_background3.jpg</file>
+        <file alias="bgg2">image/Angry_birds_background4.jpg</file>
     </qresource>
 </RCC>

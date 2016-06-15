@@ -13,6 +13,10 @@
 #include <gameitem.h>
 #include <land.h>
 #include <bird.h>
+#include <pig.h>
+#include <button.h>
+#include <wood.h>
+#include <yellow.h>
 
 namespace Ui {
 class MainWindow;
@@ -35,7 +39,9 @@ signals:
 private slots:
     void tick();
     // For debug slot
-    void QUITSLOT();
+    //void QUITSLOT();
+    void quitslot();
+    void reslot();
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
