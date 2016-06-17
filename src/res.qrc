@@ -14,5 +14,6 @@
         <file alias="yellow">image/yellow.png</file>
         <file alias="bgg">image/Angry_birds_background3.jpg</file>
         <file alias="bgg2">image/Angry_birds_background4.jpg</file>
+        <file alias="wood2">image/wood2.png</file>
     </qresource>
 </RCC>

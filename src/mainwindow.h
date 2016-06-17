@@ -39,7 +39,7 @@ signals:
 private slots:
     void tick();
     // For debug slot
-    //void QUITSLOT();
+    void QUITSLOT();
     void quitslot();
     void reslot();
 private:
