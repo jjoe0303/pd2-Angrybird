@@ -6,6 +6,9 @@
 #include <QPainter>
 #include <QTransform>
 #include <QtMath>
+#include <QList>
+#include <typeinfo>
+#include <QGraphicsItem>
 
 class GameItem : public QObject
 {
@@ -18,6 +21,7 @@ public:
 public slots:
     void paint();
     // TODO virtual void collide();
+ //   virtual void collide();
 
 protected:
     b2Body *g_body;

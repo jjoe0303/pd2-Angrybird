@@ -5,7 +5,7 @@
         <file alias="bg.jpg">image/Angry_birds_background2.jpg</file>
         <file alias="land.jpg">image/Angry_birds_ground1.jpg</file>
         <file>image/slingshot.jpg</file>
-        <file>image/slingshot3.png</file>
+        <file alias="sling">image/slingshot3.png</file>
         <file>image/King_pig.png</file>
         <file alias="pig.png">image/King_pig2.png</file>
         <file alias="quitbutton">image/BUTTON3.png</file>

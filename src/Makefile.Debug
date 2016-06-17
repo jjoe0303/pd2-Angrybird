@@ -178,10 +178,13 @@ debug/qrc_res.cpp: res.qrc \
 		image/Angry_birds_background2.jpg \
 		image/Angry_birds_ground1.jpg \
 		image/BUTTON3.png \
+		image/slingshot3.png \
+		image/Angry_birds_background4.jpg \
 		image/yellow.png \
+		image/Angry_birds_background3.jpg \
+		image/wood2.png \
 		image/Normal_Bird_1.png \
 		image/BUTTON4.png \
-		image/slingshot3.png \
 		image/King_pig.png \
 		image/slingshot.jpg
 	C:\Users\joe\Desktop\Qt\5.6\mingw49_32\bin\rcc.exe -name res res.qrc -o debug\qrc_res.cpp
@@ -352,6 +355,7 @@ debug/moc_mainwindow.cpp: ../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidget
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		land.h \
 		bird.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
@@ -502,6 +506,8 @@ debug/moc_gameitem.cpp: Box2D/Box2D.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		gameitem.h
 	C:\Users\joe\Desktop\Qt\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/mkspecs/win32-g++ -IC:/Users/joe/Documents/angrybird/Example-code-for-Project-3/src -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtWidgets -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtGui -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtANGLE -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtCore gameitem.h -o debug\moc_gameitem.cpp
 
@@ -784,6 +790,7 @@ debug/main.o: main.cpp mainwindow.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		land.h \
 		bird.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
@@ -966,6 +973,7 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		land.h \
 		bird.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
@@ -976,45 +984,7 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QObject \
 		wood.h \
 		yellow.h \
-		ui_mainwindow.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QVariant \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QAction \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qaction.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qactiongroup.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QApplication \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qapplication.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcoreapplication.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qeventloop.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qguiapplication.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qinputmethod.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QButtonGroup \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qbuttongroup.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsView \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsview.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qscrollarea.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qframe.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QHBoxLayout \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qboxlayout.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qlayout.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qlayoutitem.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgridlayout.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QHeaderView \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qheaderview.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractitemview.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qabstractitemmodel.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qitemselectionmodel.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qstyleoption.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvalidator.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qregularexpression.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qslider.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractslider.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qstyle.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/gameitem.o: gameitem.cpp gameitem.h \
@@ -1154,7 +1124,9 @@ debug/gameitem.o: gameitem.cpp gameitem.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfontmetrics.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\gameitem.o gameitem.cpp
 
 debug/bird.o: bird.cpp bird.h \
@@ -1296,12 +1268,24 @@ debug/bird.o: bird.cpp bird.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsScene \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QTimer \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtimer.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QMouseEvent \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qevent.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qkeysequence.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurlquery.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfile.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfiledevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvector2d.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h \
+		pig.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\bird.o bird.cpp
 
 debug/land.o: land.cpp land.h \
@@ -1443,6 +1427,8 @@ debug/land.o: land.cpp land.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsScene \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\land.o land.cpp
@@ -1586,6 +1572,8 @@ debug/pig.o: pig.cpp pig.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsScene \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
@@ -1828,6 +1816,8 @@ debug/wood.o: wood.cpp wood.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsScene \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
@@ -1836,7 +1826,164 @@ debug/wood.o: wood.cpp wood.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\wood.o wood.cpp
 
-debug/yellow.o: yellow.cpp 
+debug/yellow.o: yellow.cpp yellow.h \
+		bird.h \
+		gameitem.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qglobal.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qconfig.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfeatures.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsystemdetection.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qprocessordetection.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcompilerdetection.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtypeinfo.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtypetraits.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qisenum.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsysinfo.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qlogging.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qflags.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasicatomic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qgenericatomic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_cxx11.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_gcc.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_msvc.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv7.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv6.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv5.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_ia64.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_x86.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_unix.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qglobalstatic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmutex.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qnumeric.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qversiontagging.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobject.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobjectdefs.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qnamespace.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstring.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qchar.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbytearray.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qrefcount.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qarraydata.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstringbuilder.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qlist.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qalgorithms.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qiterator.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qhashfunctions.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qpair.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbytearraylist.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstringlist.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qregexp.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstringmatcher.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcoreevent.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qscopedpointer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmetatype.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qvarlengtharray.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcontainerfwd.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobject_impl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qvariant.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmap.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qdebug.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qhash.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtextstream.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qiodevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qlocale.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qshareddata.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qvector.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qpoint.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qset.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcontiguouscache.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qrect.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmargins.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsize.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpainterpath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qmatrix.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpolygon.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qregion.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qwindowdefs.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qdatastream.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qline.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpixmap.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpaintdevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qcolor.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qrgb.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qrgba64.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsharedpointer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qimage.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpixelformat.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtransform.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qbrush.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfontinfo.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfont.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfontmetrics.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QTimer \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtimer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QMouseEvent \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qevent.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qkeysequence.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurlquery.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfile.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfiledevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvector2d.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h \
+		pig.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\yellow.o yellow.cpp
 
 debug/qrc_res.o: debug/qrc_res.cpp 

@@ -34,3 +34,5 @@ void Bird::setLinearVelocity(b2Vec2 velocity)
 {
     g_body->SetLinearVelocity(velocity);
 }
+
+

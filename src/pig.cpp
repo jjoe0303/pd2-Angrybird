@@ -34,3 +34,17 @@ void Pig::setLinearVelocity(b2Vec2 velocity)
 {
     g_body->SetLinearVelocity(velocity);
 }
+
+/*void Pig::collide()
+{
+    QList<QGraphicsItem *> colliding_Items = collidingItems();
+    for(int i = 0,n = colliding_Items.size();i<n;++i){
+        if(typeid(*(colliding_Items[i])) == typeid(Red)){
+            //remove the pig
+            scene()->removeItem(colliding_Items[i]);
+            //delete object on the heap
+            delete colliding_Items[i];
+            return;
+        }
+    }
+}*/
