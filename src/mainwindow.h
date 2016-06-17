@@ -17,6 +17,7 @@
 #include <button.h>
 #include <wood.h>
 #include <yellow.h>
+#include <black.h>
 
 namespace Ui {
 class MainWindow;
@@ -49,7 +50,6 @@ private:
     QList<GameItem *> itemList;
     QTimer timer;
     Bird *birdie;
-    Yellow * yelloww;
     int count=0;
 };
 

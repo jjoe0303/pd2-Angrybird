@@ -47,6 +47,11 @@ void MainWindow::showEvent(QShowEvent *)
     piggy->setLinearVelocity(b2Vec2(0,0));
     itemList.push_back(piggy);
 
+    Pig *piggy2 = new Pig(12.5f,6.0f,0.7f,&timer,QPixmap(":/pig.png").scaled(46,46),world,scene);
+    // Setting the Velocity
+    piggy2->setLinearVelocity(b2Vec2(0,0));
+    itemList.push_back(piggy2);
+
     // Create pig (You can edit here)
    /* Pig *piggy2 = new Pig(12.0f,6.0f,0.25f,&timer,QPixmap(":/pig.png").scaled(46,46),world,scene);
     // Setting the Velocity
@@ -71,6 +76,22 @@ void MainWindow::showEvent(QShowEvent *)
     // Setting the Velocity
     woody3->setLinearVelocity(b2Vec2(0,0));
     itemList.push_back(woody3);
+
+    Wood *woody4 = new Wood(10.4f,6.0f,0.7f,2.8f,&timer,QPixmap(":/wood").scaled(21,83),world,scene);
+    // Setting the Velocity
+    woody4->setLinearVelocity(b2Vec2(0,0));
+    itemList.push_back(woody4);
+
+    // Create wood (You can edit here)
+    Wood *woody5 = new Wood(14.4f,6.0f,0.7f,2.8f,&timer,QPixmap(":/wood").scaled(21,83),world,scene);
+    // Setting the Velocity
+    woody5->setLinearVelocity(b2Vec2(0,0));
+    itemList.push_back(woody5);
+
+    Wood *woody6 = new Wood(12.5f,8.0f,5.6f,0.6f,&timer,QPixmap(":/wood2").scaled(170,22),world,scene);
+    // Setting the Velocity
+    woody6->setLinearVelocity(b2Vec2(0,0));
+    itemList.push_back(woody6);
 
    /* Land *sling2 = new Land(4.5,3.4,0.05,6.0,QPixmap().scaled(55,171),world,scene);
     // Setting the Velocity
@@ -107,19 +128,28 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         // TODO : add your code here
       //  std::cout << "Press !" << std::endl ;
         world->SetGravity(b2Vec2(0.0f, 0.0f));
-        if(count%2==0){
+
+        if(count%3==0){
         birdie = new Bird(4.5f,7.0f,0.7f,&timer,QPixmap(":/bird.png").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
         itemList.push_back(birdie);
         count++;
         return true;
-        }
-        if(count%2==1){
-        yelloww = new Yellow(4.5f,7.0f,0.7f,&timer,QPixmap(":/yellow").scaled(46,46),world,scene);
+       }
+       if(count%3==1){
+        birdie = new Yellow(4.5f,7.0f,0.7f,&timer,QPixmap(":/yellow").scaled(46,46),world,scene);
         // Setting the Velocity
-        yelloww->setLinearVelocity(b2Vec2(0,0));
-        itemList.push_back(yelloww);
+        birdie->setLinearVelocity(b2Vec2(0,0));
+        itemList.push_back(birdie);
+        count++;
+        return true;
+        }
+        if(count%3==2){
+        birdie = new Black(4.5f,7.0f,0.7f,&timer,QPixmap(":/black").scaled(46,46),world,scene);
+        // Setting the Velocity
+        birdie->setLinearVelocity(b2Vec2(0,0));
+        itemList.push_back(birdie);
         count++;
         return true;
         }
@@ -142,14 +172,18 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
        // std::cout << "Release !" << std::endl ;
         world->SetGravity(b2Vec2(0.0f, -9.8f));
 
-        if(count%2==1){
+       // if(count%3==1){
+        birdie->setLinearVelocity(b2Vec2(-(e->x()-148)/7,(e->y()-338)/7));
+        return true;
+       // }
+       /* if(count%3==2){
         birdie->setLinearVelocity(b2Vec2(-(e->x()-148)/7,(e->y()-338)/7));
         return true;
         }
-        if(count%2==0){
-        yelloww->setLinearVelocity(b2Vec2(-(e->x()-148)/7,(e->y()-338)/7));
+        if(count%3==0){
+        birdie->setLinearVelocity(b2Vec2(-(e->x()-148)/7,(e->y()-338)/7));
         return true;
-        }
+        }*/
     }
     return false;
 }

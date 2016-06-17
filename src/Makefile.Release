@@ -51,7 +51,8 @@ SOURCES       = main.cpp \
 		pig.cpp \
 		button.cpp \
 		wood.cpp \
-		yellow.cpp release\qrc_res.cpp \
+		yellow.cpp \
+		black.cpp release\qrc_res.cpp \
 		release\moc_mainwindow.cpp \
 		release\moc_gameitem.cpp \
 		release\moc_button.cpp
@@ -64,6 +65,7 @@ OBJECTS       = release/main.o \
 		release/button.o \
 		release/wood.o \
 		release/yellow.o \
+		release/black.o \
 		release/qrc_res.o \
 		release/moc_mainwindow.o \
 		release/moc_gameitem.o \
@@ -123,7 +125,8 @@ DIST          =  mainwindow.h \
 		pig.h \
 		button.h \
 		wood.h \
-		yellow.h main.cpp \
+		yellow.h \
+		black.h main.cpp \
 		mainwindow.cpp \
 		gameitem.cpp \
 		bird.cpp \
@@ -131,7 +134,8 @@ DIST          =  mainwindow.h \
 		pig.cpp \
 		button.cpp \
 		wood.cpp \
-		yellow.cpp
+		yellow.cpp \
+		black.cpp
 QMAKE_TARGET  = AngryThing
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = AngryThing.exe
@@ -154,7 +158,7 @@ dist:
 	$(ZIP) AngryThing.zip $(SOURCES) $(DIST) AngryThing.pro ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\spec_pre.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\qdevice.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\device_config.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\common\angle.conf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\qconfig.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dcore.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dcore_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dinput.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dinput_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dlogic.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dlogic_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquick.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquick_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickinput.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickinput_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickrender.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickrender_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3drender.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_3drender_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_axbase.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_axbase_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_axcontainer.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_axcontainer_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_axserver.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_axserver_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_bluetooth.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_bluetooth_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_bootstrap_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_clucene_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_concurrent.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_concurrent_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_core.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_core_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_dbus.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_dbus_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_designer.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_designer_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_designercomponents_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_gui.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_gui_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_help.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_help_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_labscontrols_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_labstemplates_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_location.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_location_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_multimedia.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_multimedia_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_multimediawidgets.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_network.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_network_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_nfc.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_nfc_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_opengl.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_opengl_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_openglextensions.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_openglextensions_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_platformsupport_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_positioning.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_positioning_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_printsupport.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_printsupport_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_qml.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_qml_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_qmldevtools_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_qmltest.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_qmltest_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_quick.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_quick_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_quickparticles_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_quickwidgets.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_quickwidgets_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_script.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_script_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_scripttools.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_scripttools_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_sensors.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_sensors_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_serialbus.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_serialbus_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_serialport.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_serialport_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_sql.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_sql_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_svg.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_svg_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_testlib.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_testlib_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_uiplugin.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_uitools.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_uitools_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_webchannel.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_webchannel_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_websockets.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_websockets_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_widgets.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_widgets_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_winextras.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_winextras_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_xml.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_xml_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_xmlpatterns.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\qt_functions.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\qt_config.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\win32\qt_config.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\win32-g++\qmake.conf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\spec_post.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\exclusive_builds.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\default_pre.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\win32\default_pre.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\resolve_config.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\exclusive_builds_post.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\default_post.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\build_pass.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\qml_debug.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\win32\rtti.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\precompile_header.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\warn_on.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\qt.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\resources.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\moc.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\win32\opengl.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\uic.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\win32\windows.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\testcase_targets.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\exceptions.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\yacc.prf ..\..\..\..\Desktop\Qt\5.6\mingw49_32\mkspecs\features\lex.prf AngryThing.pro res.qrc ..\..\..\..\Desktop\Qt\5.6\mingw49_32\lib\qtmain.prl ..\..\..\..\Desktop\Qt\5.6\mingw49_32\lib\Qt5Widgets.prl ..\..\..\..\Desktop\Qt\5.6\mingw49_32\lib\Qt5Gui.prl ..\..\..\..\Desktop\Qt\5.6\mingw49_32\lib\Qt5Core.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\mainwindow.o release\gameitem.o release\bird.o release\land.o release\pig.o release\button.o release\wood.o release\yellow.o release\qrc_res.o release\moc_mainwindow.o release\moc_gameitem.o release\moc_button.o
+	-$(DEL_FILE) release\main.o release\mainwindow.o release\gameitem.o release\bird.o release\land.o release\pig.o release\button.o release\wood.o release\yellow.o release\black.o release\qrc_res.o release\moc_mainwindow.o release\moc_gameitem.o release\moc_button.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -172,12 +176,14 @@ compiler_rcc_make_all: release/qrc_res.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_res.cpp
 release/qrc_res.cpp: res.qrc \
+		image/hockey5.png \
 		image/wood1.png \
 		image/GROUND.png \
 		image/King_pig2.png \
 		image/Angry_birds_background2.jpg \
 		image/Angry_birds_ground1.jpg \
 		image/BUTTON3.png \
+		image/angry-bird-black-icon.png \
 		image/slingshot3.png \
 		image/Angry_birds_background4.jpg \
 		image/yellow.png \
@@ -185,6 +191,8 @@ release/qrc_res.cpp: res.qrc \
 		image/wood2.png \
 		image/Normal_Bird_1.png \
 		image/BUTTON4.png \
+		image/Hockey_Bird_IIHF.png \
+		image/hockey4.png \
 		image/King_pig.png \
 		image/slingshot.jpg
 	C:\Users\joe\Desktop\Qt\5.6\mingw49_32\bin\rcc.exe -name res res.qrc -o release\qrc_res.cpp
@@ -366,6 +374,7 @@ release/moc_mainwindow.cpp: ../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidg
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QObject \
 		wood.h \
 		yellow.h \
+		black.h \
 		mainwindow.h
 	C:\Users\joe\Desktop\Qt\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/mkspecs/win32-g++ -IC:/Users/joe/Documents/angrybird/Example-code-for-Project-3/src -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtWidgets -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtGui -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtANGLE -IC:/Users/joe/Desktop/Qt/5.6/mingw49_32/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp
 
@@ -801,6 +810,7 @@ release/main.o: main.cpp mainwindow.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QObject \
 		wood.h \
 		yellow.h \
+		black.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QApplication \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qapplication.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcoreapplication.h \
@@ -984,7 +994,46 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QObject \
 		wood.h \
 		yellow.h \
-		ui_mainwindow.h
+		black.h \
+		ui_mainwindow.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QVariant \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QAction \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qaction.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qactiongroup.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QApplication \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qapplication.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcoreapplication.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qeventloop.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qguiapplication.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qinputmethod.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QButtonGroup \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsView \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qscrollarea.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qframe.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QHBoxLayout \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qboxlayout.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qlayout.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qlayoutitem.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgridlayout.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QHeaderView \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qheaderview.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qstyleoption.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvalidator.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qregularexpression.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qslider.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractslider.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qstyle.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/gameitem.o: gameitem.cpp gameitem.h \
@@ -1284,8 +1333,7 @@ release/bird.o: bird.cpp bird.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfile.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfiledevice.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvector2d.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h \
-		pig.h
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\bird.o bird.cpp
 
 release/land.o: land.cpp land.h \
@@ -1579,7 +1627,17 @@ release/pig.o: pig.cpp pig.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QTimer \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtimer.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h \
+		bird.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QMouseEvent \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qevent.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qkeysequence.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurlquery.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfile.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfiledevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvector2d.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\pig.o pig.cpp
 
 release/button.o: button.cpp button.h \
@@ -1982,9 +2040,167 @@ release/yellow.o: yellow.cpp yellow.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfile.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfiledevice.h \
 		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvector2d.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h \
-		pig.h
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\yellow.o yellow.cpp
+
+release/black.o: black.cpp black.h \
+		bird.h \
+		gameitem.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsPixmapItem \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qglobal.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qconfig.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfeatures.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsystemdetection.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qprocessordetection.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcompilerdetection.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtypeinfo.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtypetraits.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qisenum.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsysinfo.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qlogging.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qflags.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasicatomic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qgenericatomic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_cxx11.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_gcc.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_msvc.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv7.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv6.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_armv5.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_ia64.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_x86.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qatomic_unix.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qglobalstatic.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmutex.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qnumeric.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qversiontagging.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobject.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobjectdefs.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qnamespace.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstring.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qchar.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbytearray.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qrefcount.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qarraydata.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstringbuilder.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qlist.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qalgorithms.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qiterator.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qhashfunctions.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qpair.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbytearraylist.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstringlist.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qregexp.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qstringmatcher.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcoreevent.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qscopedpointer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmetatype.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qvarlengtharray.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcontainerfwd.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qobject_impl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qvariant.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmap.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qdebug.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qhash.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtextstream.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qiodevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qlocale.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qshareddata.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qvector.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qpoint.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qset.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcontiguouscache.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qrect.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmargins.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsize.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpainterpath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qmatrix.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpolygon.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qregion.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qwindowdefs.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qdatastream.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qline.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpixmap.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpaintdevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qcolor.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qrgb.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qrgba64.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsharedpointer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qimage.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpixelformat.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtransform.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPainter \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpainter.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtextoption.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qpen.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qbrush.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfontinfo.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfont.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qfontmetrics.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QTransform \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QtMath \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qmath.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QList \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsItem \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QPixmap \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsScene \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QTimer \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qtimer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qbasictimer.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/QMouseEvent \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qevent.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qkeysequence.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurl.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qurlquery.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfile.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qfiledevice.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvector2d.h \
+		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qtouchdevice.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\black.o black.cpp
 
 release/qrc_res.o: release/qrc_res.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\qrc_res.o release\qrc_res.cpp

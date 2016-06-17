@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     pig.cpp \
     button.cpp \
     wood.cpp \
-    yellow.cpp
+    yellow.cpp \
+    black.cpp
 
 HEADERS  += mainwindow.h \
     Box2D/Collision/Shapes/b2ChainShape.h \
@@ -76,7 +77,8 @@ HEADERS  += mainwindow.h \
     pig.h \
     button.h \
     wood.h \
-    yellow.h
+    yellow.h \
+    black.h
 
 FORMS    += mainwindow.ui
 
