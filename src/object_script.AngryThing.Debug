@@ -9,6 +9,7 @@ INPUT(
 ./debug\wood.o
 ./debug\yellow.o
 ./debug\black.o
+./debug\blue.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_gameitem.o

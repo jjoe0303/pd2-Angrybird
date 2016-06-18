@@ -41,10 +41,17 @@ b2Vec2 Bird::getLinearVelocity()
     return x;
 }
 
-/*void Bird::collide()
+b2Vec2 Bird::getpos()
 {
-    QList<QGraphicsItem *>
+    p=g_body->GetPosition();
+    return p;
+}
 
-}*/
+void Bird::special()
+{
+
+}
+
+
 
 

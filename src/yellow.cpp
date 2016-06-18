@@ -5,3 +5,8 @@ Yellow::Yellow(float x, float y, float radius, QTimer *timer, QPixmap pixmap, b2
 
 }
 
+void Yellow::special()
+{
+    setLinearVelocity(b2Vec2(getLinearVelocity().x*2.5,getLinearVelocity().y*2.5));
+}
+

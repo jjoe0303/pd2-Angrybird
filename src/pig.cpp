@@ -1,5 +1,6 @@
 #include "pig.h"
 
+extern Bird * birdie;
 Pig::Pig(float x, float y, float radius, QTimer *timer, QPixmap pixmap, b2World *world, QGraphicsScene *scene):GameItem(world)
 {
     // Set pixmap
@@ -35,16 +36,17 @@ void Pig::setLinearVelocity(b2Vec2 velocity)
     g_body->SetLinearVelocity(velocity);
 }
 
-/*void Pig::collide()
+b2Vec2 Pig::getLinearVelocity()
 {
-    QList<QGraphicsItem *> colliding_Items = collidingItems();
-    for(int i = 0,n = colliding_Items.size();i<n;++i){
-        if(typeid(*(colliding_Items[i])) == typeid(Red)){
-            //remove the pig
-            scene()->removeItem(colliding_Items[i]);
-            //delete object on the heap
-            delete colliding_Items[i];
-            return;
-        }
-    }
-}*/
+    x=g_body->GetLinearVelocity();
+    return x;
+}
+
+b2Vec2 Pig::getpos()
+{
+    p=g_body->GetPosition();
+    return p;
+}
+
+
+

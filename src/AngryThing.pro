@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     button.cpp \
     wood.cpp \
     yellow.cpp \
-    black.cpp
+    black.cpp \
+    blue.cpp
 
 HEADERS  += mainwindow.h \
     Box2D/Collision/Shapes/b2ChainShape.h \
@@ -78,7 +79,8 @@ HEADERS  += mainwindow.h \
     button.h \
     wood.h \
     yellow.h \
-    black.h
+    black.h \
+    blue.h
 
 FORMS    += mainwindow.ui
 

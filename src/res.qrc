@@ -20,5 +20,7 @@
         <file alias="hockey">image/hockey5.png</file>
         <file>image/angry-bird-black-icon.png</file>
         <file alias="black">image/black.png</file>
+        <file alias="black2">image/black3.png</file>
+        <file alias="blue">image/blue2.png</file>
     </qresource>
 </RCC>

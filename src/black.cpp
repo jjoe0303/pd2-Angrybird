@@ -5,3 +5,8 @@ Black::Black(float x, float y, float radius, QTimer *timer, QPixmap pixmap, b2Wo
 {
 
 }
+
+void Black::special()
+{
+   sp=1;
+}

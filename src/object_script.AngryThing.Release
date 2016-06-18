@@ -9,6 +9,7 @@ INPUT(
 ./release\wood.o
 ./release\yellow.o
 ./release\black.o
+./release\blue.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_gameitem.o
