@@ -117,7 +117,6 @@ void MainWindow::showEvent(QShowEvent *)
     timer2.start(1000);
     timer3.start(15);
 
-
     Button *quitbutton = new Button();
     quitbutton->setPos(880,10);
     quitbutton->setPixmap(QPixmap(":/quitbutton"));
@@ -297,10 +296,6 @@ void MainWindow::reslot()
     MainWindow::show();
 }
 
-void MainWindow::haha()
-{
-    std::cout<<"haha"<<std::endl;
-}
 
 void MainWindow::vanish()
 {

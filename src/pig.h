@@ -20,7 +20,6 @@ public:
     int health=1;
 private:
     b2Vec2 p;
-
     b2Vec2 x;
 };
 

@@ -45,7 +45,7 @@ private slots:
     void QUITSLOT();
     void quitslot();
     void reslot();
-    void haha();
+ //   void haha();
     void vanish();
     void bye();
 private:
@@ -58,7 +58,7 @@ private:
     QTimer timer3;
     Bird *birdie;
     Pig * piggy;
-    Pig * piggy2;
+   // Pig * piggy2;
     Bird *blackk;
     Bird *blue2;
     Bird *blue3;
@@ -66,7 +66,6 @@ private:
     int count=0;
     int tmp=0;
     int insp=0;
-    int inpig=0;
 };
 
 #endif // MAINWINDOW_H
