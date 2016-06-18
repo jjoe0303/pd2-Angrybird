@@ -93,11 +93,11 @@ void MainWindow::showEvent(QShowEvent *)
     woody6->setLinearVelocity(b2Vec2(0,0));
     itemList.push_back(woody6);
 
-   /* Land *sling2 = new Land(4.5,3.4,0.05,6.0,QPixmap().scaled(55,171),world,scene);
+    Land *hall = new Land(32.0,3.4,0.05,36.0,QPixmap().scaled(5,540),world,scene);
     // Setting the Velocity
    // sling2->setLinearVelocity(b2Vec2(0,0));
-    itemList.push_back(sling2);
-*/
+    itemList.push_back(hall);
+
     QGraphicsPixmapItem * sling= new QGraphicsPixmapItem();
     sling->setPixmap(QPixmap(":/sling"));
     sling->setPos(50,290);
@@ -118,6 +118,15 @@ void MainWindow::showEvent(QShowEvent *)
     rebutton->setPixmap(QPixmap(":/rebutton"));
     connect(rebutton,SIGNAL(clicked()),this,SLOT(reslot()));
     scene->addItem(rebutton);
+
+ //   std::cout<<birdie->getLinearVelocity().x<<std::endl;
+/*if(tmp==1){
+      if(birdie->getLinearVelocity()==b2Vec2(0.0,0.0)){
+     //     delete birdie;
+          std::cout<<"haha"<<std::endl;
+          tmp=0;
+      }
+    }*/
 }
 bool MainWindow::eventFilter(QObject *, QEvent *event)
 {
@@ -126,18 +135,26 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     if(event->type() == QEvent::MouseButtonPress)
     {
         // TODO : add your code here
-      //  std::cout << "Press !" << std::endl ;
-        world->SetGravity(b2Vec2(0.0f, 0.0f));
+        std::cout << "Press !" << std::endl ;
+        if(tmp==1){
+                if(birdie->getLinearVelocity()==b2Vec2(0,0)){
+                    delete birdie;
+                    tmp=0;
+                }
+              }
 
-        if(count%3==0){
+        if(tmp==0){
+        world->SetGravity(b2Vec2(0.0f, 0.0f));
+       }
+        if(count%3==0 && e->x()<200 && tmp==0){
         birdie = new Bird(4.5f,7.0f,0.7f,&timer,QPixmap(":/bird.png").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
         itemList.push_back(birdie);
-        count++;
+        count++;        
         return true;
        }
-       if(count%3==1){
+       if(count%3==1 && e->x()<200 &&tmp==0){
         birdie = new Yellow(4.5f,7.0f,0.7f,&timer,QPixmap(":/yellow").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -145,7 +162,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
         }
-        if(count%3==2){
+        if(count%3==2 && e->x()<200 && tmp==0){
         birdie = new Black(4.5f,7.0f,0.7f,&timer,QPixmap(":/black").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -153,6 +170,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
         }
+     return true;
     }
     if(event->type() == QEvent::MouseMove)
     {
@@ -164,17 +182,27 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         //std::cout << e->x() << std::endl ;
         // std::cout << e->y() << std::endl ;
        // birdie->
+     /* if(tmp==1){
+        if(birdie->getLinearVelocity()==b2Vec2(0,0)){
+            delete birdie;
+            tmp=0;
+        }
+      }*/
         return true;
     }
     if(event->type() == QEvent::MouseButtonRelease)
     {
         // TODO : add your code here
        // std::cout << "Release !" << std::endl ;
+        if(tmp==0){
         world->SetGravity(b2Vec2(0.0f, -9.8f));
 
        // if(count%3==1){
-        birdie->setLinearVelocity(b2Vec2(-(e->x()-148)/7,(e->y()-338)/7));
+        birdie->setLinearVelocity(b2Vec2(-(e->x()-148)/6,(e->y()-338)/6));
+       // std::cout<<birdie->getLinearVelocity().x<<std::endl;
+        tmp++;}
         return true;
+       // std::cout<<birdie->getLinearVelocity().x<<std::endl;
        // }
        /* if(count%3==2){
         birdie->setLinearVelocity(b2Vec2(-(e->x()-148)/7,(e->y()-338)/7));
@@ -187,7 +215,6 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     }
     return false;
 }
-
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
@@ -204,7 +231,6 @@ void MainWindow::tick()
 void MainWindow::quitslot()
 {
     close();
-    delete ui;
 }
 
 void MainWindow::reslot()

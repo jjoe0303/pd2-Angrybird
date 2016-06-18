@@ -50,7 +50,9 @@ private:
     QList<GameItem *> itemList;
     QTimer timer;
     Bird *birdie;
+    b2Vec2 * velocity;
     int count=0;
+    int tmp=0;
 };
 
 #endif // MAINWINDOW_H

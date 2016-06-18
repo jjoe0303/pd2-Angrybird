@@ -35,4 +35,16 @@ void Bird::setLinearVelocity(b2Vec2 velocity)
     g_body->SetLinearVelocity(velocity);
 }
 
+b2Vec2 Bird::getLinearVelocity()
+{
+    x=g_body->GetLinearVelocity();
+    return x;
+}
+
+/*void Bird::collide()
+{
+    QList<QGraphicsItem *>
+
+}*/
+
 

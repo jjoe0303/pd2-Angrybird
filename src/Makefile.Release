@@ -183,7 +183,7 @@ release/qrc_res.cpp: res.qrc \
 		image/Angry_birds_background2.jpg \
 		image/Angry_birds_ground1.jpg \
 		image/BUTTON3.png \
-		image/angry-bird-black-icon.png \
+		image/black.png \
 		image/slingshot3.png \
 		image/Angry_birds_background4.jpg \
 		image/yellow.png \
@@ -194,7 +194,8 @@ release/qrc_res.cpp: res.qrc \
 		image/Hockey_Bird_IIHF.png \
 		image/hockey4.png \
 		image/King_pig.png \
-		image/slingshot.jpg
+		image/slingshot.jpg \
+		image/angry-bird-black-icon.png
 	C:\Users\joe\Desktop\Qt\5.6\mingw49_32\bin\rcc.exe -name res res.qrc -o release\qrc_res.cpp
 
 compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_gameitem.cpp release/moc_button.cpp
@@ -995,45 +996,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		wood.h \
 		yellow.h \
 		black.h \
-		ui_mainwindow.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/QVariant \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QAction \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qaction.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qactiongroup.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QApplication \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qapplication.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qcoreapplication.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qeventloop.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qguiapplication.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qinputmethod.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QButtonGroup \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qbuttongroup.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QGraphicsView \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgraphicsview.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qscrollarea.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qframe.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QHBoxLayout \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qboxlayout.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qlayout.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qlayoutitem.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qgridlayout.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QHeaderView \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qheaderview.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractitemview.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qabstractitemmodel.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qitemselectionmodel.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qstyleoption.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractspinbox.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtGui/qvalidator.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtCore/qregularexpression.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qslider.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qabstractslider.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qstyle.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
-		../../../../Desktop/Qt/5.6/mingw49_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/gameitem.o: gameitem.cpp gameitem.h \
