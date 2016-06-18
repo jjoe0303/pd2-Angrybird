@@ -32,6 +32,7 @@ void MainWindow::showEvent(QShowEvent *)
     GameItem::setGlobalSize(QSizeF(32,18),size());
     // Create ground (You can edit here)
     itemList.push_back(new Land(16,1.2,32,2.2,QPixmap(":/land.jpg").scaled(width(),height()/6.0),world,scene));
+    itemList.push_back(new Land(16,20,32,2.2,QPixmap("").scaled(width(),height()/6.0),world,scene));
  //   itemList.push_back(new Land(16,1.6,32,3.3,QPixmap(":/land.jpg").scaled(960,101),world,scene));
 
     // Create bird (You can edit here)
@@ -114,7 +115,7 @@ void MainWindow::showEvent(QShowEvent *)
    // connect(this,SIGNAL(quitGame()),this,SLOT(QUITSLOT()));
     timer.start(100/6);
     timer2.start(1000);
-    timer3.start(100);
+    timer3.start(15);
 
 
     Button *quitbutton = new Button();
@@ -148,6 +149,10 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     {
         // TODO : add your code here
       //  std::cout << "Press !" << std::endl ;
+    /*    if(e->pos().x()>200){
+            return true;
+        }
+*/
         if(tmp==1){
            //    std::cout<<"haha"<<std::endl;
            // std::cout<<"pig x"<<piggy->getpos().x<<std::endl;
@@ -177,7 +182,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         if(tmp==0){
         world->SetGravity(b2Vec2(0.0f, 0.0f));
        }
-        if(count%4==0 && e->x()<200 && tmp==0){
+        if(count%4==0 && tmp==0){
         birdie = new Bird(4.5f,7.0f,0.7f,&timer,QPixmap(":/bird.png").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -185,7 +190,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
        }
-       if(count%4==1 && e->x()<200 &&tmp==0){
+       if(count%4==1 &&tmp==0){
         birdie = new Yellow(4.5f,7.0f,0.7f,&timer,QPixmap(":/yellow").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -193,7 +198,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
         }
-        if(count%4==2 && e->x()<200 && tmp==0){
+        if(count%4==2 && tmp==0){
         birdie = new Black(4.5f,7.0f,0.7f,&timer,QPixmap(":/black").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -201,7 +206,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
         }
-        if(count%4==3 && e->x()<200 &&tmp==0){
+        if(count%4==3 &&tmp==0){
          birdie = new Blue(4.5f,7.0f,0.7f,&timer,QPixmap(":/blue").scaled(46,46),world,scene);
          // Setting the Velocity
          birdie->setLinearVelocity(b2Vec2(0,0));
@@ -284,7 +289,6 @@ void MainWindow::tick()
 void MainWindow::quitslot()
 {
     close();
-    delete ui;
 }
 
 void MainWindow::reslot()

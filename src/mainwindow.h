@@ -34,6 +34,7 @@ public:
     void showEvent(QShowEvent *);
     bool eventFilter(QObject *,QEvent *event);
     void closeEvent(QCloseEvent *);
+    int mm=0;
 signals:
     // Signal for closing the game
     void quitGame();
