@@ -35,6 +35,8 @@ public:
     bool eventFilter(QObject *,QEvent *event);
     void closeEvent(QCloseEvent *);
     int mm=0;
+    int tmp=0;
+    static int const EXIT_REBOOT;
 signals:
     // Signal for closing the game
     void quitGame();
@@ -64,7 +66,6 @@ private:
     Bird *blue3;
     b2Vec2 * velocity;
     int count=0;
-    int tmp=0;
     int insp=0;
 };
 

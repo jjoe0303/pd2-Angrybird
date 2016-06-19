@@ -146,12 +146,13 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     // Hint: Notice the Number of every event!
     if(event->type() == QEvent::MouseButtonPress)
     {
+
         // TODO : add your code here
-      //  std::cout << "Press !" << std::endl ;
-    /*    if(e->pos().x()>200){
+        std::cout << tmp << std::endl ;
+        if(e->x()>200){
             return true;
         }
-*/
+
         if(tmp==1){
            //    std::cout<<"haha"<<std::endl;
            // std::cout<<"pig x"<<piggy->getpos().x<<std::endl;
@@ -181,7 +182,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         if(tmp==0){
         world->SetGravity(b2Vec2(0.0f, 0.0f));
        }
-        if(count%4==0 && tmp==0){
+        if(count%4==0&&tmp==0){
         birdie = new Bird(4.5f,7.0f,0.7f,&timer,QPixmap(":/bird.png").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -189,7 +190,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
        }
-       if(count%4==1 &&tmp==0){
+       if(count%4==1&&tmp==0){
         birdie = new Yellow(4.5f,7.0f,0.7f,&timer,QPixmap(":/yellow").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -197,7 +198,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
         }
-        if(count%4==2 && tmp==0){
+        if(count%4==2&&tmp==0){
         birdie = new Black(4.5f,7.0f,0.7f,&timer,QPixmap(":/black").scaled(46,46),world,scene);
         // Setting the Velocity
         birdie->setLinearVelocity(b2Vec2(0,0));
@@ -205,7 +206,7 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
         count++;
         return true;
         }
-        if(count%4==3 &&tmp==0){
+        if(count%4==3&&tmp==0){
          birdie = new Blue(4.5f,7.0f,0.7f,&timer,QPixmap(":/blue").scaled(46,46),world,scene);
          // Setting the Velocity
          birdie->setLinearVelocity(b2Vec2(0,0));
@@ -261,6 +262,9 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     }
     if(event->type() == QEvent::MouseButtonRelease)
     {
+        if(e->x()>200){
+            return true;
+        }
         // TODO : add your code here
        // std::cout << "Release !" << std::endl ;
         world->SetGravity(b2Vec2(0.0f, -9.8f));
@@ -292,8 +296,10 @@ void MainWindow::quitslot()
 
 void MainWindow::reslot()
 {
-    hide();
-    MainWindow::show();
+   std::cout<<"reslot"<<std::endl;
+   tmp=0;
+   qApp->exit( MainWindow::EXIT_REBOOT );
+   delete ui;
 }
 
 
