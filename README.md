@@ -1,6 +1,7 @@
 # AngryThings
 Final project of 2016 Spring Class
-
+    <Developed with Qt & Box2D>
+    
 # How to use
 We have provided you :
 * Basic Window (Basic control of game , world of box2D have been created.)
